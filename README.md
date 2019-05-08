@@ -41,10 +41,7 @@ focus on their business. In this hands on lab we'll see how you can move custome
 ## LAB
 
 
-In step 1 we'll setup Azure virtual machine on Azure and install VS code
-and Docker hub there. Step 2 involves develop, dockerized image and
-deploy image to Docker Hub. Step 3 we'll setup WebApp for containers,
-pull image from docker and test the sample app.
+In step 1 we'll setup Azure virtual machine on Azure and install VS code and Docker hub there. Step 2 involves develop, dockerized image and deploy image to Docker Hub. Step 3 we'll setup WebApp for containers, pull image from docker and test the sample app.
 
 ### Step 1: - Setup Azure VM, Install VS Code and Docker hub
 
@@ -60,8 +57,7 @@ pull image from docker and test the sample app.
 
     ![](media/image3.png)
 
--   On next screen, select **Subscription** (choose the one you got it
-    during the workshop)
+-   On next screen, select **Subscription** (choose the one you got it during the workshop)
 
 -   Click **Create new** Resource group. Give a name and click OK
 
@@ -71,8 +67,7 @@ pull image from docker and test the sample app.
 
 -   Keep default value for Availability options, Image and size
 
--   Provide Username, Password and Confirm Password. Keep a note of it
-    as it will be used for RDP
+-   Provide Username, Password and Confirm Password. Keep a note of it as it will be used for RDP
 
 -   Select **Allow selected ports** as **Public Inbound ports**
 
@@ -112,23 +107,20 @@ pull image from docker and test the sample app.
     
 -   Click **Connect** and log into the VM
 
--   Once logged in to the VM, open a browser and go to
-    <https://code.visualstudio.com/download>
+-   Once logged in to the VM, open a browser and go to <https://code.visualstudio.com/download>
 
 ![](media/image11.png)
 
 -   Click **User Installer** 64 bit and install VS code
 
--   Once VS code installation is complete, switch to browser and go to
-    <https://docs.docker.com/v17.09/docker-for-windows/install/#download-docker-for-windows>
-    to install docker on windows
+-   Once VS code installation is complete, switch to browser and go to 
+    <https://docs.docker.com/v17.09/docker-for-windows/install/#download-docker-for-windows> to install docker on windows
 
 -   Click **Get Docker for Windows (Stable)**
 
     ![](media/image12.png)
 
--   Install docker for windows. On the last step, keep default option
-    selected and click **Ok**
+-   Install docker for windows. On the last step, keep default option selected and click **Ok**
 
     ![](media/image13.png)
 
@@ -136,13 +128,11 @@ pull image from docker and test the sample app.
 
     ![](media/image14.png)
 
--   Once login back in the VM, you will notice Docker for windows is
-    getting started
+-   Once login back in the VM, you will notice Docker for windows is getting started
 
     ![](media/image15.png)
 
--   Docker requires Hyper-V to be enable in VM. If you get below
-    message, please click **Ok.** It will take some time
+-   Docker requires Hyper-V to be enable in VM. If you get below message, please click **Ok.** It will take some time
 
     ![](media/image16.png)
 
@@ -152,26 +142,22 @@ pull image from docker and test the sample app.
 
     ![](media/image17.png)
     
--   If you haven't have any docker account then create one at
-    hub.docker.com. That account you will use to deploy your Angular
+-   If you haven't have any docker account then create one at hub.docker.com. That account you will use to deploy your Angular
     image at docker hub (kind of repository for all your images).
 
 -   Once you logged in, Right click on docker icon at system tray
 
     ![](media/image18.png)
 
--   Make sure you successfully logged in and it's running linux
-    container and not windows.
+-   Make sure you successfully logged in and it's running linux container and not windows.
 
 -   Install Node.js runtime from <https://nodejs.org/en/download/>
 
--   Search for "Visual studio code", right click and run it as
-    Administrator
+-   Search for "Visual studio code", right click and run it as Administrator
 
 > ![](media/image19.png)
 
--   Once Visual Studio Code opens click **Extensions** on left side
-    panel
+-   Once Visual Studio Code opens click **Extensions** on left side panel
 
 -   Click on **Extensions** and search for Docker
 
@@ -189,13 +175,11 @@ pull image from docker and test the sample app.
 
 ### Step 2: - Develop, Dockerized image and deploy
 
--   On Visual Studio Code user interface, click **Terminal** and select
-    **New Terminal**
+-   On Visual Studio Code user interface, click **Terminal** and select **New Terminal**
 
     ![](media/image22.png)
     
--   If framework opens up PowerShell terminal then you can switch to
-    command prompt. Click on **Customize** option for the prompt
+-   If framework opens up PowerShell terminal then you can switch to command prompt. Click on **Customize** option for the prompt
 
     ![](media/image23.png)
 
@@ -203,8 +187,7 @@ pull image from docker and test the sample app.
 
     ![](media/image24.png)
 
--   Once terminal opens, you can switch to c:\\ (if by default it's not
-    there)
+-   Once terminal opens, you can switch to c:\\ (if by default it's not there)
 
     ![](media/image25.png)
     
@@ -212,14 +195,12 @@ pull image from docker and test the sample app.
 
 ![](media/image26.png)
 
--   Type **ng new my-app** and press Enter. Select y for "**Would like
-    to add Angular routing**" and press Enter for CSS (which default)
+-   Type **ng new my-app** and press Enter. Select y for "**Would like to add Angular routing**" and press Enter for CSS (which default)
     for "**Which stylesheet format would like to use?**"
 
     ![](media/image27.png)
 
--   Once process is done, it will add a new folder called **my-app** in
-    the same folder. From left menu bar, click **Open Folder**
+-   Once process is done, it will add a new folder called **my-app** in the same folder. From left menu bar, click **Open Folder**
 
     ![](media/image28.png)
     
@@ -231,8 +212,7 @@ pull image from docker and test the sample app.
 
 -   Open ./src/app/app.component.ts.
 
--   Change the title property from \'my-app\' to \' \"Deploy Dockerized
-    Angular Application to Azure\" Lab!!! \'.
+-   Change the title property from \'my-app\' to \' \"Deploy Dockerized Angular Application to Azure\" Lab!!! \'.
 
     ![](media/image30.png)
 
@@ -284,8 +264,7 @@ pull image from docker and test the sample app.
 
     ![](media/image38.png)
     
--   The command will start building image. Wait for sometime while it's
-    building the image.
+-   The command will start building image. Wait for sometime while it's building the image.
 
     ![](media/image39.png)
 
@@ -295,13 +274,11 @@ pull image from docker and test the sample app.
 
     ![](media/image40.png)
 
--   To run docker image, type **docker run -d -p 3000:80 \--rm
-    my-app:latest**
+-   To run docker image, type **docker run -d -p 3000:80 \--rm my-app:latest**
 
     ![](media/image41.png)
 
--   Type **docker container ls -a** and press
-    **Enter**![](media/image42.png)
+-   Type **docker container ls -a** and press **Enter**![](media/image42.png)
 
 -   Open a browser, type **<http://localhost:3000/>** and press Enter
 
@@ -311,11 +288,9 @@ pull image from docker and test the sample app.
 
     ![](media/image44.png)
 
--   Run **docker container ls -a** to check if container is stop or
-    not**.** It will show no record which means no container is running.
+-   Run **docker container ls -a** to check if container is stop or not. It will show no record which means no container is running.
 
--   Switch to browser and refresh the page or type
-    <http://localhost:3000>. Since no container is running hence you see
+-   Switch to browser and refresh the page or type <http://localhost:3000>. Since no container is running hence you see
     **"Can't reach the page"**
 
     ![](media/image45.png)
@@ -326,21 +301,17 @@ pull image from docker and test the sample app.
 
     ![](media/image46.png)
 
--   Since you are already login in docker hub, it checks against
-    existing login.
+-   Since you are already login in docker hub, it checks against existing login.
 
--   First tag the image. Type **docker tag 'IMAGE ID'
-    'DOCKER\_HUB\_NAME/IMAGE\_NAME:TAG\_NAME'**
+-   First tag the image. Type **docker tag 'IMAGE ID' 'DOCKER\_HUB\_NAME/IMAGE\_NAME:TAG\_NAME'**
 
     ![](media/image47.png)
 
--   Push the image, Type docker push
-    **'DOCKER\_HUB\_NAME/IMAGE\_NAME:TAG\_NAME'**
+-   Push the image, Type docker push **'DOCKER\_HUB\_NAME/IMAGE\_NAME:TAG\_NAME'**
 
 > ![](media/image48.png)
 
--   Open a browser, type hub.docker.com. Once login, see all the
-    repository
+-   Open a browser, type hub.docker.com. Once login, see all the repository
 
     ![](media/image49.png)
 
@@ -348,11 +319,9 @@ pull image from docker and test the sample app.
 
 ### Step 3:- Setup Azure Web App for containers and Access the website
 
--   Open browser and type <https://portal.azure.com> . Login with the
-    credential which is used to setup the subscription
+-   Open browser and type <https://portal.azure.com> . Login with the credential which is used to setup the subscription
 
--   Click **Create a resource,** type web and click **Web App for
-    Containers **
+-   Click **Create a resource,** type web and click **Web App for Containers **
 
     ![](media/image50.png)
     
@@ -360,8 +329,7 @@ pull image from docker and test the sample app.
 
     ![](media/image51.png)
 
--   Type **App name**, select **Subscription**, create or select
-    **Resource group**, select **Linux** as **OS**
+-   Type **App name**, select **Subscription**, create or select **Resource group**, select **Linux** as **OS**
 
     ![](media/image52.png)
 
@@ -385,8 +353,7 @@ pull image from docker and test the sample app.
 
     ![](media/image54.png)
     
--   **Pin to dashboard** if you like and open the tile else **go to
-    resource**
+-   **Pin to dashboard** if you like and open the tile else **go to resource**
 
     ![](media/image55.png)
     
@@ -398,8 +365,7 @@ pull image from docker and test the sample app.
 
     ![](media/image57.png)
 
--   Hurray!!! You successfully able to Deploy Dockerized Angular
-    Application to Azure.
+-   Hurray!!! You successfully able to Deploy Dockerized Angular Application to Azure.
 
 ## Cleanup
 
