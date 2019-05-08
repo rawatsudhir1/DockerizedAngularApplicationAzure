@@ -1,8 +1,7 @@
    # Deploy Dockerized Angular Application to Azure
 
 
-Introduction
-============
+## Introduction
 
 Your organization running angular web application to help their customers. The entire setup is running on their premises. Company
 business is growing hence facing various challenges like
@@ -27,8 +26,7 @@ And so on...
 The organization appoints you to overcome all the challenges. You suggested to move entire application to Azure so that organization can
 focus on their business. In this hands on lab we'll see how you can move customer existing Angular based application as it is (or with minimum changes) to Azure.
 
-Prerequisite
-============
+## Prerequisite
 
 -   VS Code 2017
 
@@ -36,21 +34,19 @@ Prerequisite
 
 -   Azure Subscription
 
-Architecture
-============
+## Architecture
 
 ![](media/image1.png)
 
-LAB
-===
+## LAB
+
 
 In step 1 we'll setup Azure virtual machine on Azure and install VS code
 and Docker hub there. Step 2 involves develop, dockerized image and
 deploy image to Docker Hub. Step 3 we'll setup WebApp for containers,
 pull image from docker and test the sample app.
 
-Step 1: - Setup Azure VM, Install VS Code and Docker hub
---------------------------------------------------------
+### Step 1: - Setup Azure VM, Install VS Code and Docker hub
 
 -   Login to <https://ms.portal.azure.com>
 
@@ -191,7 +187,7 @@ Step 1: - Setup Azure VM, Install VS Code and Docker hub
 
 -   You were successfully able to setup VS code and docker
 
-Step 2: - Develop, Dockerized image and deploy
+### Step 2: - Develop, Dockerized image and deploy
 
 -   On Visual Studio Code user interface, click **Terminal** and select
     **New Terminal**
@@ -350,7 +346,7 @@ Step 2: - Develop, Dockerized image and deploy
 
 -   Great! You deployed your docker image to docker hub.
 
-Step 3:- Setup Azure Web App for containers and Access the website
+### Step 3:- Setup Azure Web App for containers and Access the website
 
 -   Open browser and type <https://portal.azure.com> . Login with the
     credential which is used to setup the subscription
@@ -405,8 +401,6 @@ Step 3:- Setup Azure Web App for containers and Access the website
 -   Hurray!!! You successfully able to Deploy Dockerized Angular
     Application to Azure.
 
-Cleanup
-=======
+## Cleanup
 
--   Please delete all the resources from the Azure portal to avoid any
-    charges to your subscription
+-   Please delete all the resources from the Azure portal to avoid any charges to your subscription.
