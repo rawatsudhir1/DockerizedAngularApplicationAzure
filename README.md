@@ -1,4 +1,4 @@
-                            # Deploy Dockerized Angular Application to Azure
+   # Deploy Dockerized Angular Application to Azure
 
 
 Introduction
