@@ -12,7 +12,7 @@ business is growing hence facing various challenges like
     time. Unavailability of service impact customer experience and
     business continuity
 
--   Increase in Infrastructure Cost: - There always a mismatch on
+-   Increase in Infrastructure Cost: - Always demand to buy new hardware to keep satisfying the growth. Also, there always a mismatch on
     infrastructure purchase vs. usage.
 
 -   Fault Tolerance: - Make sure service is up and running even if some
@@ -24,11 +24,9 @@ business is growing hence facing various challenges like
 
 -   Latency: - How to reduce latency in the application
 
--   Quicker release cycle: -
-
 -   Global reach: - Ability to reach global audience
 
-> And so on...
+And so on...
 
 The organization appoints you to overcome all the challenges. You
 suggested to move entire application to Azure so that organization can
@@ -48,7 +46,7 @@ Prerequisite
 Architecture
 ============
 
-![](media/image1.png){width="6.5in" height="3.7881944444444446in"}
+![](media/image1.png)
 
 LAB
 ===
@@ -65,14 +63,13 @@ Step 1: - Setup Azure VM, Install VS Code and Docker hub
 
 -   Click **Create a resource** and search for Windows Client
 
-> ![](media/image2.png){width="5.859418197725284in"
-> height="1.4323020559930009in"}
+> ![](media/image2.png)
 
 -   Click **Windows Client**
 
 -   Click **Create**
 
-    ![](media/image3.png){width="6.5in" height="1.5395833333333333in"}
+    ![](media/image3.png)
 
 -   On next screen, select **Subscription** (choose the one you got it
     during the workshop)
@@ -92,13 +89,13 @@ Step 1: - Setup Azure VM, Install VS Code and Docker hub
 
 -   Select RDP as **Select inbound ports**
 
-    ![](media/image4.png){width="6.5in" height="7.264583333333333in"}
+    ![](media/image4.png)
 
 -   Click **Next: Disks \>**
 
 -   Select **Standard HDD** as **OS disk type**
 
-    ![](media/image5.png){width="6.5in" height="3.3847222222222224in"}
+    ![](media/image5.png)
 
 -   Click **Review + Create**
 
@@ -106,34 +103,30 @@ Step 1: - Setup Azure VM, Install VS Code and Docker hub
 
 -   Once deployment is successful, click on **Go to resource**
 
-    ![](media/image6.png){width="6.5in" height="4.377083333333333in"}
+    ![](media/image6.png)
 
 -   Click **Connect**
 
-    ![](media/image7.png){width="4.421907261592301in"
-    height="2.9948140857392826in"}
-
+    ![](media/image7.png)
+    
 -   Click **Download RDP File**
 
-    ![](media/image8.png){width="4.453157261592301in"
-    height="3.994820647419073in"}
+    ![](media/image8.png)
 
 -   Save the RDP connection
 
-    ![](media/image9.png){width="6.5in" height="0.44166666666666665in"}
+    ![](media/image9.png)
 
 -   Once saved, open the RDP connection file
 
-    ![](media/image10.png){width="5.552123797025372in"
-    height="2.8333541119860017in"}
-
+    ![](media/image10.png)
+    
 -   Click **Connect** and log into the VM
 
 -   Once logged in to the VM, open a browser and go to
     <https://code.visualstudio.com/download>
 
-![](media/image11.png){width="5.739583333333333in"
-height="2.985074365704287in"}
+![](media/image11.png)
 
 -   Click **User Installer** 64 bit and install VS code
 
@@ -143,45 +136,40 @@ height="2.985074365704287in"}
 
 -   Click **Get Docker for Windows (Stable)**
 
-    ![](media/image12.png){width="4.192739501312336in"
-    height="3.984403980752406in"}
+    ![](media/image12.png)
 
 -   Install docker for windows. On the last step, keep default option
     selected and click **Ok**
 
-    ![](media/image13.png){width="6.5in" height="4.4534722222222225in"}
+    ![](media/image13.png)
 
 -   Once installation is done, click **Close and log out**
 
-    ![](media/image14.png){width="5.760459317585302in"
-    height="3.671901793525809in"}
+    ![](media/image14.png)
 
 -   Once login back in the VM, you will notice Docker for windows is
     getting started
 
-    ![](media/image15.png){width="3.4323162729658794in"
-    height="1.7291797900262467in"}
+    ![](media/image15.png)
 
 -   Docker requires Hyper-V to be enable in VM. If you get below
     message, please click **Ok.** It will take some time
 
-    ![](media/image16.png){width="6.5in" height="2.3895833333333334in"}
+    ![](media/image16.png)
 
 -   RDP again to Virtual machine
 
 -   Once docker is up and running, it will prompt below message
 
-    ![](media/image17.png){width="3.6302351268591426in"
-    height="3.5989851268591426in"}
-
+    ![](media/image17.png)
+    
 -   If you haven't have any docker account then create one at
     hub.docker.com. That account you will use to deploy your Angular
     image at docker hub (kind of repository for all your images).
 
 -   Once you logged in, Right click on docker icon at system tray
 
-    ![](media/image18.png){width="2.6979363517060366in"
-    height="3.036480752405949in"}
+    ![](media/image18.png)
 
 -   Make sure you successfully logged in and it's running linux
     container and not windows.
@@ -191,22 +179,20 @@ height="2.985074365704287in"}
 -   Search for "Visual studio code", right click and run it as
     Administrator
 
-> ![](media/image19.png){width="2.4218755468066493in"
-> height="4.147774496937883in"}
+> ![](media/image19.png)
 
 -   Once Visual Studio Code opens click **Extensions** on left side
     panel
 
 -   Click on **Extensions** and search for Docker
 
-    ![](media/image20.png){width="3.9479451006124235in"
-    height="3.95836176727909in"}
+    ![](media/image20.png)
 
 -   Click **Install**
 
 -   Once installation is done, the screen will look like below
 
-    ![](media/image21.png){width="6.5in" height="2.029861111111111in"}
+    ![](media/image21.png)
 
 -   Close and open Visual studio again (as run as administrator).
 
@@ -217,45 +203,40 @@ Step 2: - Develop, Dockerized image and deploy
 -   On Visual Studio Code user interface, click **Terminal** and select
     **New Terminal**
 
-    ![](media/image22.png){width="4.562533902012248in"
-    height="3.7500273403324584in"}
-
+    ![](media/image22.png)
+    
 -   If framework opens up PowerShell terminal then you can switch to
     command prompt. Click on **Customize** option for the prompt
 
-    ![](media/image23.png){width="4.73961832895888in"
-    height="1.0520909886264218in"}
+    ![](media/image23.png)
 
 -   Select **Command Prompt**
 
-    ![](media/image24.png){width="6.5in" height="1.0555555555555556in"}
+    ![](media/image24.png)
 
 -   Once terminal opens, you can switch to c:\\ (if by default it's not
     there)
 
-    ![](media/image25.png){width="4.390657261592301in"
-    height="1.312509842519685in"}
-
+    ![](media/image25.png)
+    
 -   Type **npm install -g \@angular/cli** and press Enter
 
-![](media/image26.png){width="5.11982939632546in"
-height="1.6927209098862641in"}
+![](media/image26.png)
 
 -   Type **ng new my-app** and press Enter. Select y for "**Would like
     to add Angular routing**" and press Enter for CSS (which default)
     for "**Which stylesheet format would like to use?**"
 
-    ![](media/image27.png){width="6.5in" height="1.948611111111111in"}
+    ![](media/image27.png)
 
 -   Once process is done, it will add a new folder called **my-app** in
     the same folder. From left menu bar, click **Open Folder**
 
-    ![](media/image28.png){width="3.708360673665792in"
-    height="3.4010662729658794in"}
-
+    ![](media/image28.png)
+    
 -   Select the **my-app** folder from the path
 
-    ![](media/image29.png){width="6.5in" height="5.698611111111111in"}
+    ![](media/image29.png)
 
 -   Click **Select Folder**
 
@@ -264,79 +245,82 @@ height="1.6927209098862641in"}
 -   Change the title property from \'my-app\' to \' \"Deploy Dockerized
     Angular Application to Azure\" Lab!!! \'.
 
-    ![](media/image30.png){width="6.5in" height="2.4680555555555554in"}
+    ![](media/image30.png)
 
 -   Let's compile and run the application
 
 -   In terminal window, type **ng serve** and press **Enter**
 
-    ![](media/image31.png){width="6.5in" height="3.0590277777777777in"}
+    ![](media/image31.png)
 
 -   Open a browser and type http://localhost:4200
 
-> ![](media/image32.png){width="6.5in" height="2.2527777777777778in"}
+> ![](media/image32.png)
 
 -   Switch to terminal and click CTRL+C to stop Angular runtime
 
 -   Click **New File** icon, beside **My-App** folder
 
-    ![](media/image33.png){width="3.22919072615923in"
-    height="3.0104385389326334in"}
+    ![](media/image33.png)
 
 -   Provide file name as **Dockerfile**
 
-    ![](media/image34.png){width="3.2864818460192478in"
-    height="3.6562762467191603in"}
-
+    ![](media/image34.png)
+    
 -   Copy and paste below code in **Dockerfile**
+
+    ```FROM node:11.6.0-alpine AS nalpineimage
+       COPY . ./MY-APP
+       WORKDIR /MY-APP
+       RUN npm i
+       RUN $(npm bin)/ng build --prod
+
+       FROM nginx:1.15.8-alpine
+       COPY --from=nalpineimage /MY-APP/dist/my-app/ /usr/share/nginx/html
+    ```
 
 -   Save the file
 
 -   Let's build the app. Type **ng build \--prod**
 
-    ![](media/image36.png){width="6.5in" height="1.9388888888888889in"}
+    ![](media/image36.png)
 
 -   Once done. Let's build docker image
 
 -   Right click on Dockerfile and click **Build Image**
 
-    ![](media/image37.png){width="3.3096292650918637in"
-    height="4.244792213473316in"}
-
+    ![](media/image37.png)
+    
 -   Change the tag if you want and click **Enter**
 
-    ![](media/image38.png){width="6.4062970253718285in"
-    height="0.7500054680664917in"}
-
+    ![](media/image38.png)
+    
 -   The command will start building image. Wait for sometime while it's
     building the image.
 
-    ![](media/image39.png){width="6.5in" height="6.419444444444444in"}
+    ![](media/image39.png)
 
 -   Let's check if docker image is created or not
 
 -   Type **docker images** and press **Enter**
 
-    ![](media/image40.png){width="6.5in" height="1.51875in"}
+    ![](media/image40.png)
 
 -   To run docker image, type **docker run -d -p 3000:80 \--rm
     my-app:latest**
 
-    ![](media/image41.png){width="5.807333770778652in"
-    height="0.8645898950131233in"}
+    ![](media/image41.png)
 
 -   Type **docker container ls -a** and press
-    **Enter**![](media/image42.png){width="6.5in"
-    height="0.9659722222222222in"}
+    **Enter**![](media/image42.png)
 
 -   Open a browser, type **<http://localhost:3000/>** and press Enter
 
-    ![](media/image43.png){width="6.5in" height="2.4763888888888888in"}
+    ![](media/image43.png)
 
 -   To stop docker container, type **docker stop \<CONTAINER ID\>**
 
-    ![](media/image44.png){width="4.000029527559055in"
-    height="0.63542104111986in"}
+    ![](media/image44.png)
 
 -   Run **docker container ls -a** to check if container is stop or
     not**.** It will show no record which means no container is running.
@@ -345,14 +329,13 @@ height="1.6927209098862641in"}
     <http://localhost:3000>. Since no container is running hence you see
     **"Can't reach the page"**
 
-    ![](media/image45.png){width="6.5in" height="2.9298611111111112in"}
-
+    ![](media/image45.png)
+    
 -   Let's deploy docker image to docker hub
 
 -   Let's login to docker hub. Type **docker login**
 
-    ![](media/image46.png){width="3.83336176727909in"
-    height="1.0156321084864393in"}
+    ![](media/image46.png)
 
 -   Since you are already login in docker hub, it checks against
     existing login.
@@ -360,17 +343,17 @@ height="1.6927209098862641in"}
 -   First tag the image. Type **docker tag 'IMAGE ID'
     'DOCKER\_HUB\_NAME/IMAGE\_NAME:TAG\_NAME'**
 
-    ![](media/image47.png){width="6.5in" height="1.80625in"}
+    ![](media/image47.png)
 
 -   Push the image, Type docker push
     **'DOCKER\_HUB\_NAME/IMAGE\_NAME:TAG\_NAME'**
 
-> ![](media/image48.png){width="6.5in" height="1.7534722222222223in"}
+> ![](media/image48.png)
 
 -   Open a browser, type hub.docker.com. Once login, see all the
     repository
 
-    ![](media/image49.png){width="6.5in" height="1.6576388888888889in"}
+    ![](media/image49.png)
 
 -   Great! You deployed your docker image to docker hub.
 
@@ -382,18 +365,16 @@ Step 3:- Setup Azure Web App for containers and Access the website
 -   Click **Create a resource,** type web and click **Web App for
     Containers **
 
-    ![](media/image50.png){width="5.531290463692039in"
-    height="4.1302384076990375in"}
-
+    ![](media/image50.png)
+    
 -   Click **Create**
 
-    ![](media/image51.png){width="6.5in" height="4.76875in"}
+    ![](media/image51.png)
 
 -   Type **App name**, select **Subscription**, create or select
     **Resource group**, select **Linux** as **OS**
 
-    ![](media/image52.png){width="3.244815179352581in"
-    height="5.598999343832021in"}
+    ![](media/image52.png)
 
 -   Click **Configure container**
 
@@ -403,7 +384,7 @@ Step 3:- Setup Azure Web App for containers and Access the website
 
 -   Provide Image and tag name
 
-    ![](media/image53.png){width="6.5in" height="3.7055555555555557in"}
+    ![](media/image53.png)
 
 -   Click **Apply**
 
@@ -413,23 +394,20 @@ Step 3:- Setup Azure Web App for containers and Access the website
 
 -   Check notification option to check the status
 
-    ![](media/image54.png){width="3.35419072615923in"
-    height="2.7968952318460194in"}
-
+    ![](media/image54.png)
+    
 -   **Pin to dashboard** if you like and open the tile else **go to
     resource**
 
-    ![](media/image55.png){width="2.328141951006124in"
-    height="2.1666819772528436in"}
-
+    ![](media/image55.png)
+    
 -   On the overview page, copy **URL**
 
-    ![](media/image56.png){width="6.916476377952756in"
-    height="1.2916666666666667in"}
-
+    ![](media/image56.png)
+    
 -   Open the browser and paste the url in address bar, press **Enter**
 
-    ![](media/image57.png){width="6.5in" height="2.6243055555555554in"}
+    ![](media/image57.png)
 
 -   Hurray!!! You successfully able to Deploy Dockerized Angular
     Application to Azure.
