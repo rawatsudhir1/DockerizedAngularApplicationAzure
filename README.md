@@ -1,4 +1,4 @@
-<p style="text-align: center;"> **Deploy Dockerized Angular Application to Azure ** </p>
+                            # Deploy Dockerized Angular Application to Azure
 
 
 Introduction
