@@ -1,38 +1,31 @@
-Deploy Dockerized Angular Application to Azure 
-===============================================
+<p style="text-align: center;"> **Deploy Dockerized Angular Application to Azure ** </p>
+
 
 Introduction
 ============
 
-Your organization running angular web application to help their
-customer. The entire setup is running on their premises. Company
+Your organization running angular web application to help their customers. The entire setup is running on their premises. Company
 business is growing hence facing various challenges like
 
--   High Availability: - To make sure service up and running all the
-    time. Unavailability of service impact customer experience and
+-   **High Availability: -** To make sure service up and running all the time. Unavailability of service impact customer experience and
     business continuity
 
--   Increase in Infrastructure Cost: - Always demand to buy new hardware to keep satisfying the growth. Also, there always a mismatch on
-    infrastructure purchase vs. usage.
+-   **Increase in Infrastructure Cost: -** Always demand to buy new hardware to keep satisfying the growth. 
 
--   Fault Tolerance: - Make sure service is up and running even if some
-    of the service is not functioning properly
+-   **Fault Tolerance: -** Make sure service is up and running even if some of the service is not functioning properly
 
--   Scalability: - Auto scale based on the network traffic.
+-   **Scalability: -** Auto scale based on the network traffic.
 
--   Security: - Keep infrastructure and services secure
+-   **Security: -** Keep infrastructure and services secure
 
--   Latency: - How to reduce latency in the application
+-   **Latency: -** How to reduce latency in the application
 
--   Global reach: - Ability to reach global audience
+-   **Global reach: -** Ability to reach global audience
 
 And so on...
 
-The organization appoints you to overcome all the challenges. You
-suggested to move entire application to Azure so that organization can
-focus on their business. In this hands on lab we'll see how you can move
-customer existing Angular based application as it is (or with minimum
-changes) to Azure.
+The organization appoints you to overcome all the challenges. You suggested to move entire application to Azure so that organization can
+focus on their business. In this hands on lab we'll see how you can move customer existing Angular based application as it is (or with minimum changes) to Azure.
 
 Prerequisite
 ============
