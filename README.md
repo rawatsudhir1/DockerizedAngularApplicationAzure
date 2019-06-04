@@ -238,7 +238,8 @@ In step 1 we'll setup Azure virtual machine on Azure and install VS code and Doc
     
 -   Copy and paste below code in **Dockerfile**
 
-    ```FROM nginx:1.15.8-alpine AS nalpineimage
+    ```
+      FROM nginx:1.15.8-alpine AS nalpineimage
       RUN apk add --update nodejs nodejs-npm
       COPY . ./MY-APP/
       WORKDIR /MY-APP
