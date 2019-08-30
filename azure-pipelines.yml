@@ -16,7 +16,11 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm install -g @angular/cli
-    npm install
-    ng build --prod
+    FROM node:11.6.0-alpine AS nalpineimage
+    COPY . ./MY-APP
+    WORKDIR /MY-APP
+    RUN npm i
+    RUN $(npm bin)/ng build --prod
   displayName: 'npm install and build'
+
+
